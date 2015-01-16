@@ -3,18 +3,27 @@ var threeItems = [1,2,3];
 //alert the result of your function
 
   //code here
-
-
+var last = function() {
+	var x = threeItems.slice(-3);
+	alert(x);
+};
+last();
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
 //Loop through evenArray removing all values that aren't even 
-var evenArray = [1,2,3,6,22,98,45,23,22,12];
+vvar evenArr = [];
 
-  //code here
-
+var even = function() {
+  for (var i = 0; i < evenArray.length; i++) {
+     if (evenArray[i] % 2 === 0); {
+		evenArr.push(evenArray[i]);
+     	}
+  }alert(evenArr);
+};
+even();
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
@@ -23,25 +32,36 @@ var evenArray = [1,2,3,6,22,98,45,23,22,12];
 //below you're given a function that will return a random number between 0 and 30 and an array full or numbers 'randomArray'. Your job is to write a function that will get a random number, then loop through the array to see if that random number is in the array. If it is, alert true, if it's not, alert false
 var getRandomArbitrary = function() {
   return Math.floor(Math.random() * (30 - 0) + 0);
-}
+};
 var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
   //code here
 
+var findRanNum = function() {
+	for (var i = 0; i < randomArray.length; i++) {
+		if (randomArray[i] === getRandomArbitrary()) {
+			alert('The ' + randomArray[i] + ' matchs number in ' + getRandomArbitrary);
+		else (randomArray[i] !== getRandomArbitrary()) {
+			alert('The ' + randomArray[i] + ' did not match the number in ' + getRandomArbitrary);
+			}
+		}
+};
+findRanNum();
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
-//Create a copy of first and save it into second. Then, add 6 and 7 to the end of second. When you run this, first should be just [1,2,3,4,5] and second will be [1,2,3,4,5,6,7] if you created your copy correctly.
+//Create a copy of first and save it into second. Then, add 6 and 7 to the end of second. When you run this, 
+//first should be just [1,2,3,4,5] and second will be [1,2,3,4,5,6,7] if you created your copy correctly.
 var first = [1,2,3,4,5];
 var second;
 
   //code here
+second = first.concat(6, 7);
 
 alert(first) //[1,2,3,4,5];
 alert(second) //[1,2,3,4,5,6,7];
-
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -52,8 +72,14 @@ alert(second) //[1,2,3,4,5,6,7];
 var sentence = "Dev Mountain is the best"
 
   //code here
-
-
+var longest = function() {
+	var split = sentence.split(" ");
+	for(i = 0; i < split.length; i++){
+    	var len = y[i];
+    console.log("<br /> Element " + len + " = " + len.length); 
+	}
+};
+longest();
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
